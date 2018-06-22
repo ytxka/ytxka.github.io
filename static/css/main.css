@@ -1,0 +1,299 @@
+
+h2 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    background-color: #ff6e3e;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #f59649;
+}
+
+/*解决子元素浮动之后父元素坍缩的方法*/
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-heading {
+    margin-top: 40px;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.main-wrapper {
+    background: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*header*/
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav {
+    height: 50px;
+    padding-top: 8px;
+    color: #fff;
+}
+
+nav .logo {
+    float: left;
+    margin: 0 3%;
+    line-height: 50px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav .logo:hover {
+    color: #fbfac9;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0 2%;
+
+}
+
+nav ul li {
+    /*设置list横行排列*/
+    /*设置line-height之后文字会垂直方向居中*/
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 50px;
+}
+
+nav ul li a {
+    display: inline-block;
+    line-height: 40px;
+    height: inherit;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #fff;
+}
+
+.banner {
+    height: 700px;
+    /*background-color: grey;*/
+    color: #fff;
+}
+
+.banner .inner {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    top: 150px;
+    text-align: center;
+}
+
+.banner .inner h1 {
+    margin: 0;
+    padding: 5% 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.banner .inner button {
+    margin-top: 40%;
+}
+
+.banner .inner .more {
+    margin-top: 30%;
+}
+/*end of header*/
+
+/*section one*/
+.section-one {
+    padding: 100px 0;
+    background: rgba(48, 158, 148, 0.9);
+}
+
+.section-one .wrapper {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.section-one .wrapper .hr {
+    margin: 2em auto;
+    width: 50%;
+    border: 1px solid #379c94;
+}
+
+.section-one .wrapper .icon-group {
+    margin-top: 60px;
+ }
+
+.section-one .wrapper .icon-group .icon {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    margin: 0 5%;
+    box-shadow: 0 0 8px #217972;
+    /*border: 1px solid #5bb7d2;*/
+    /*background-color: grey;*/
+}
+
+.section-one .wrapper .icon-group .icon a {
+    display: inline-block;
+    margin: 38px 0 0 -20px;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(-45deg);
+}
+/*end of section one*/
+
+/*section two*/
+.section-two {
+    background-color: rgba(14, 13, 20, 0.9);
+    color: #fff;
+}
+
+.section-two .article-preview:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.08);
+}
+.section-two .article-preview > div {
+    float: left;
+    /*font-size: 0;*/
+    /*上句清除图片上下之间的空隙*/
+}
+
+.section-two .article-preview .img-section {
+    width: 45%;
+}
+
+.section-two .article-preview .img-section img {
+    width: 100%;
+}
+
+.section-two .article-preview .text-section {
+    position: relative;
+    top: 70px;
+    left: 70px;
+    width: 55%;
+}
+
+.section-two .article-preview .text-section h2 {
+    font-size: 1.5em;
+}
+
+.section-two .article-preview .text-section .sub-heading {
+    font-size: 15px;
+}
+
+.text-section > div {
+    max-width: 80%;
+}
+/*end of section two*/
+
+/*section three*/
+.section-three {
+    padding: 80px;
+    background-color: rgba(158, 94, 124, 0.9);
+}
+
+.section-three .hr {
+    margin: 3% auto;
+    border: 1px solid #9a647e;
+    width: 60%;
+}
+
+.card-group {
+    margin-top: 50px;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding: 5%;
+}
+
+.card:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.card:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(5) {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.card:nth-child(6) {
+    background-color: rgba(0, 0, 0, 0.28);
+}
+
+/*foot*/
+footer {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+footer .share-group ul {
+    margin: 0 auto;
+    padding: 50px 0 40px 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer .share-group ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+footer .share-group ul li a:hover {
+    color: #b0acb4;
+}
+
+footer .copy {
+    text-align: center;
+}
