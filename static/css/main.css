@@ -79,7 +79,7 @@ nav {
 
 nav .logo {
     float: left;
-    margin: 0 3%;
+    margin: 0 0 0 3%;
     line-height: 50px;
     font-size: 1.5em;
     letter-spacing: 2px;
@@ -93,15 +93,14 @@ nav .logo:hover {
 nav ul {
     float: right;
     list-style: none;
-    margin: 0 2%;
-
+    margin: 0 3%;
 }
 
 nav ul li {
     /*设置list横行排列*/
     /*设置line-height之后文字会垂直方向居中*/
     display: inline-block;
-    padding: 0 15px;
+    padding: 0 10px;
     line-height: 50px;
 }
 
@@ -119,23 +118,35 @@ nav ul li a.active {
 
 .banner {
     height: 700px;
-    /*background-color: grey;*/
     color: #fff;
 }
 
 .banner .inner {
     position: relative;
-    max-width: 300px;
+    max-width: 60%;
     margin: 0 auto;
     top: 150px;
     text-align: center;
 }
 
 .banner .inner h1 {
-    margin: 0;
+    max-width: 300px;
+    margin: 0 auto;
     padding: 5% 0;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .banner .inner h1 {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 5% 0;
+        font-weight: 500;
+        font-size: 20px;
+        /*border-top: none;*/
+        /*border-bottom: 2px solid #fff;*/
+    }
 }
 
 .banner .inner button {
@@ -214,10 +225,10 @@ nav ul li a.active {
     width: 100%;
 }
 
-.text-section > * {
-    max-width: 50%;
-    /*margin-right: 0;*/
-}
+/*.text-section > * {*/
+    /*max-width: 50%;*/
+    /*!*margin-right: 0;*!*/
+/*}*/
 
 .section-two .article-preview .text-section {
     /*position: relative;*/
@@ -235,10 +246,22 @@ nav ul li a.active {
     font-size: 1.3em;
 }
 
+@media only screen and (max-width: 550px) {
+    .section-two .article-preview .text-section h2 {
+        font-size: 1em;
+    }
+}
+
 .section-two .article-preview .text-section .sub-heading {
     font-size: 15px;
     /*position: absolute;*/
 
+}
+
+@media only screen and (max-width: 550px) {
+    .section-two .article-preview .text-section .sub-heading {
+        margin-top: 5%;
+    }
 }
 /*end of section two*/
 
