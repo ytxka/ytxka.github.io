@@ -18,12 +18,18 @@ button {
     border: none;
     padding: 10px 50px;
     cursor: pointer;
-    background-color: #ff6e3e;
+    background-color: #f59649;
     color: #fff;
 }
 
+@media only screen and (max-width: 450px) {
+    button {
+        padding: 10px 40px;
+    }
+}
+
 button:hover {
-    background-color: #f59649;
+    background-color: #ff6e3e;
 }
 
 /*解决子元素浮动之后父元素坍缩的方法*/
