@@ -54,6 +54,18 @@ button:hover {
     background-position: center center;
 }
 
+@media only screen and (max-width: 500px){
+    .main-wrapper {
+        /*background: #9a647e;*/
+        background: url(../images/banner-sm.jpg);
+        /*background-attachment: fixed;*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        background-size: cover;
+    }
+}
+
 /*header*/
 header {
     background-color: rgba(0, 0, 0, 0.4);
@@ -202,10 +214,14 @@ nav ul li a.active {
     width: 100%;
 }
 
+.text-section > div {
+    max-width: 80%;
+}
+
 .section-two .article-preview .text-section {
     position: relative;
-    top: 70px;
-    left: 70px;
+    top: 68px;
+    left: 50px;
     width: 55%;
 }
 
@@ -215,10 +231,6 @@ nav ul li a.active {
 
 .section-two .article-preview .text-section .sub-heading {
     font-size: 15px;
-}
-
-.text-section > div {
-    max-width: 80%;
 }
 /*end of section two*/
 
@@ -300,3 +312,4 @@ footer .share-group ul li a:hover {
 footer .copy {
     text-align: center;
 }
+/*end of footer*/
