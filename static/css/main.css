@@ -52,6 +52,13 @@ button:hover {
     letter-spacing: 1px;
 }
 
+@media only screen and (max-width: 450px) {
+    .sub-heading {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
+}
+
 .main-wrapper {
     background: url(../images/banner.jpg);
     background-attachment: fixed;
