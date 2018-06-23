@@ -214,29 +214,37 @@ nav ul li a.active {
     width: 100%;
 }
 
-.text-section > div {
-    max-width: 80%;
+.text-section > * {
+    max-width: 50%;
+    /*margin-right: 0;*/
 }
 
 .section-two .article-preview .text-section {
-    position: relative;
-    top: 68px;
-    left: 50px;
-    width: 55%;
+    /*position: relative;*/
+    /*top: 5%;*/
+    /*left: 5%;*/
+    /*实现文字上、左有一定边距，且充满剩余宽度*/
+    /*一定要使用%为单位，原教程的px单位有问题*/
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50%;
 }
 
 .section-two .article-preview .text-section h2 {
-    font-size: 1.5em;
+    /*position: absolute;*/
+    font-size: 1.3em;
 }
 
 .section-two .article-preview .text-section .sub-heading {
     font-size: 15px;
+    /*position: absolute;*/
+
 }
 /*end of section two*/
 
 /*section three*/
 .section-three {
-    padding: 80px;
+    padding: 8%;
     background-color: rgba(158, 94, 124, 0.9);
 }
 
@@ -258,6 +266,18 @@ nav ul li a.active {
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */
     padding: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        float: left;
+        width: 50%;
+        min-height: 150px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+        padding: 5%;
+    }
 }
 
 .card:nth-child(1) {
