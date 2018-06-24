@@ -125,6 +125,10 @@ nav ul li a {
     color: #fff;
 }
 
+nav ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+
 nav ul li a.active {
     border-bottom: 3px solid #fff;
 }
@@ -392,6 +396,13 @@ footer .copy {
     transition: right .5s;
 }
 
+@media only screen and (max-width: 500px) {
+    .slideBar {
+        width: 200px;
+        right: -200px;
+    }
+}
+
 .slideBar ul {
     list-style: none;
     margin: 10% 0 0 0;
@@ -425,6 +436,7 @@ footer .copy {
     background-color: #616161;
     border: 1px solid #bdc2bd;
 }
+/*回到顶部结束*/
 
 /*文章页*/
 .article header .banner {
@@ -448,6 +460,13 @@ footer .copy {
     line-height: 25px;
     font-size: 1em;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 450px) {
+    .article header .banner .inner .sub-heading {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
 }
 
 .article .article-wrapper {
