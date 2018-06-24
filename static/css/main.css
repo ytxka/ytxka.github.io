@@ -369,3 +369,59 @@ footer .copy {
     text-align: center;
 }
 /*end of footer*/
+
+/*遮罩区*/
+.mask {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+/*侧边导航栏*/
+.slideBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -280px;
+    width: 280px;
+    background: #383838;
+    transition: right .5s;
+}
+
+.slideBar ul {
+    list-style: none;
+    margin: 10% 0 0 0;
+    padding: 0;
+}
+
+.slideBar ul li {
+    padding: 15px 0 10px 20%;
+}
+
+.slideBar ul li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.slideBar ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+/*侧边导航栏结束*/
+
+/*回到顶部*/
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.back-to-top button {
+    padding: 5px 10px;
+    background-color: #616161;
+    border: 1px solid #bdc2bd;
+}
