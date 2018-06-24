@@ -99,7 +99,7 @@ nav .logo {
     cursor: pointer;
 }
 
-nav .logo:hover {
+nav .logo a:hover {
     color: #fbfac9;
 }
 
@@ -424,4 +424,46 @@ footer .copy {
     padding: 5px 10px;
     background-color: #616161;
     border: 1px solid #bdc2bd;
+}
+
+/*文章页*/
+.article header .banner {
+    height: 350px;
+}
+
+.article header .banner .inner {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    top: 50px;
+    text-align: center;
+}
+
+.article header .banner .inner h1 {
+    border: none;
+}
+
+.article header .banner .inner .sub-heading {
+    margin-top: 0;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.article .article-wrapper {
+    margin: 0 auto;
+    padding: 20px 8%;
+    background-color: #f8f7f8;
+}
+
+.article .article-info {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+article {
+    /*margin: 0 auto;*/
+    padding: 30px 0;
+    line-height: 2;
+    text-align: center;
 }
